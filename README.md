@@ -27,6 +27,11 @@ The script will trigger a restart by killing PageKite with a SIGSEGV, which
 will trigger a core dump (if the OS permits). The latest log files are then
 harvested and uploaded to the PageKite.net crash report URL.
 
+This script can probably be used as-is from root's crontab, on machines
+using the `pagekite.py` Debian package. Other setups will probably need
+to customize the restart logic and/or the kite-name detection code, at
+the very least.
+
 
 ### Design considerations
 
