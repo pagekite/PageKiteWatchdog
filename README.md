@@ -37,12 +37,16 @@ from the relay.
 2. Care should be taken not to overload shared infrastructure; don't
 probe too frequently, don't upload crash dumps every few minutes.
 
-3. PageKite processes can be restarted in many ways. Since these restarts
+3. Even if PageKite appears broken, it may be worth giving it some time
+to recover. An overly aggressive watchdog may itself cause or prolong
+outages unnecessarily.
+
+4. PageKite processes can be restarted in many ways. Since these restarts
 are generally indicative of bugs in libpagekite or pagekite.py, it is
 useful to perform the restart in such a way that it creates useful data
 for debugging; core dumps or logs. Sharing that data with PageKite.net
 increases the odds that bugs will get fixed.
 
-4. When sharing data with PageKite.net, please be mindful of private
+5. When sharing data with PageKite.net, please be mindful of private
 user data. Core dumps in particular, although extremely useful, may
 contain fragments of user data, including usernames and passwords.
